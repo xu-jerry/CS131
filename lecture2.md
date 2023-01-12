@@ -76,6 +76,18 @@
 - unit type is empty tuple
 - functions only take in 1 argument (can be list or tuple)
 - :: is a function with type:
-- 'a -> ('a list -> 'a list)
-- list constructor
+  - 'a -> ('a list -> 'a list)
+  - list constructor
   - 3::[4;9] => [3;4;9]
+  - O(1)
+- Lisp: cons car cdr
+  - cons ::
+  - car hd
+  - cdr tl
+- let car a::b = a
+  - syntax error
+- don't try to take the head of a list
+- let cons(a, b) = a::b;;
+- val cons : 'a * 'a list -> 'a list = <fun>
+- let cons a b = a::b;;
+- val cons : 'a -> 'a list -> 'a list = <fun>
