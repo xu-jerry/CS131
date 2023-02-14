@@ -52,7 +52,7 @@
 
 ## Function
 - math: mapping from a domain to a range
-- functional form / higher order function: function hose domain is a function
+- functional form / higher order function: function whose domain is a function
 - f(x) = x^2 vs $\int_0^1f(x)dx$ = $\int(0, 1, f)$
 - $f \circ g \equiv f(g(x))$ = $(\circ (f, g))(x)$
 - referential transparency
