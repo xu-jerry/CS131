@@ -165,7 +165,7 @@ machine level
 ## setjump
 ```cpp
 #include <setjmp.h>
-(type) jmp_buf
-setjmp(j)
-longjmp(j, v)
+(type) jmp_buf // equal to continuation (saved regs)
+setjmp(j) // create a continuation in j, returns 0
+longjmp(j, v) // causes control to transfer back to sethmp, it returns v
 ```
